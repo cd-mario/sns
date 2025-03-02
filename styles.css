@@ -1,24 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    /* background */
+    --main-bg: #343131;
+    /* typograhy */
+    --font: "Inter", sans-serif;
+    /* font colors */
+    --light-fnt: #ECF2F8;
+    --red-fnt: #e52828;
+    --darkgray-fnt: #89929B;
+    --gray-fnt: #C6CDD5;
+    /* font sizes */
+    --heading: 2.5rem;
+    --subheading: 1.5rem;
+    --paragraph: 1rem;
+    --small: 0.8rem;
+    /* font weights */
+    --large: 800;
+    --medium: 600;
+    --normal: 400;
+    --light: 300;
+    /* spacings */
+    --main-padding: 4rem 2rem;
+    --sub-padding: 2rem 2rem;
+    --header-size: 5rem;
+    --subheader-size: 1.3rem;   
+    --para: 0.9rem;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: var( --main-bg);
+    font-family: var( --font);
+    color: var(--light-fnt);
+}
 nav {
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     display: flex;
     justify-content: space-between;
 }
 .logo-wrapper {
     display: flex;
     flex-direction: row;
-    width: 22%;
-    justify-content: space-between;
+    width: 17%;
+    justify-content: space-around;
 }
 #logo {
     border-radius: 50%;
 }
+.logo-text {
+    font-size: 0.8rem;
+    font-weight: var(--normal);
+
+    padding: 0.7rem 0.5rem;
+}
+.red {
+    color: var(--red-fnt);
+}
 .nav-links {
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     display: flex;
     list-style: none;
     width: 39%;
