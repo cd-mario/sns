@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+nav {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 22%;
+    justify-content: space-between;
+}
+#logo {
+    border-radius: 50%;
+}
+.nav-links {
+    padding-top: 1rem;
+    display: flex;
+    list-style: none;
+    width: 39%;
+    justify-content: space-between;
+}
