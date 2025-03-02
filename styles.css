@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
     /* background */
-    --main-bg: #151414;
+    --main-bg: #0b0b0b;
     /* typograhy */
     --font: "Inter", sans-serif;
     /* font colors */
@@ -54,8 +54,8 @@ nav {
 .logo-text {
     font-size: 0.8rem;
     font-weight: var(--normal);
-
     padding: 0.7rem 0.5rem;
+    line-height: 1.2rem;
 }
 .red {
     color: var(--red-fnt);
@@ -72,6 +72,7 @@ nav {
     color: var(--light-fnt);
     font-size: var(--small);
     font-weight: var(--large);
+    letter-spacing: 0.5px;
 }
 .nav-links .sample {
     color: var(--red-fnt);
