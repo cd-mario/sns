@@ -1,30 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
     /* background */
-    --main-bg: #0b0b0b;
+    --main-bg: #010101;
     /* typograhy */
     --font: "Inter", sans-serif;
     /* font colors */
     --light-fnt: #ECF2F8;
-    --red-fnt: #e52828;
+    --red-fnt: #ed1414;
+    --red-fnt2: #cb0125;
     --darkgray-fnt: #89929B;
     --gray-fnt: #C6CDD5;
     /* font sizes */
-    --heading: 2.5rem;
+    --heading: 3rem;
     --subheading: 1.5rem;
     --paragraph: 1rem;
     --small: 0.9rem;
+    --v-small: 0.7rem;
     /* font weights */
     --large: 800;
     --medium: 600;
     --normal: 400;
     --light: 300;
+    --ultra-light: 200;
     /* spacings */
-    --main-padding: 4rem 2rem;
+    --main-padding: 2rem 0rem 0rem 4rem;
     --sub-padding: 2rem 2rem;
     --header-size: 5rem;
-    --subheader-size: 1.3rem;   
-    --para: 0.9rem;
+    --main-margin: 10rem 4rem 2rem 4rem;
+    --margin-two: 2rem;   
+    --margin-one: 1rem;
+    /* shadow box */
+    --shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
 
 * {
@@ -53,7 +59,7 @@ nav {
 }
 .logo-text {
     font-size: 0.8rem;
-    font-weight: var(--normal);
+    font-weight: var(--large);
     padding: 0.7rem 0.5rem;
     line-height: 1.2rem;
 }
@@ -64,16 +70,91 @@ nav {
     padding-top: 1rem;
     display: flex;
     list-style: none;
-    width: 40%;
+    width: 44%;
     justify-content: space-between;
+    text-transform: uppercase;
 }
 .nav-links .nav-link {
     text-decoration: none;
     color: var(--light-fnt);
     font-size: var(--small);
-    font-weight: var(--large);
+    font-weight: var(--light);
     letter-spacing: 0.5px;
-}
+    padding-bottom: 0.5rem;
+}   
 .nav-links .sample {
-    color: var(--red-fnt);
+    border-bottom: 2px solid var(--red-fnt2);
+}
+.hero {
+    padding: 4rem 0 1rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(70px, auto);
+}
+.hero-one {
+    grid-column: 1/ 2;
+    grid-row: 2;
+}
+.hero-two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+    background-image: url('images/sample2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: var(--shadow)
+
+}
+.slogan {
+    font-size: var(--heading);
+    font-weight: var(--large);
+    line-height: 3.9rem;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke: 1px white;
+}
+.textfillred {
+    -webkit-text-stroke: 1px var(--red-fnt);
+}
+.slogan-para {
+    margin-top: 2.5rem;
+    color: var(--gray-fnt);
+    line-height: 1.6rem;
+    font-size: var(--normal);
+    font-weight: var(--ultra-light);
+    width: 80%;
+    text-align: justify;
+}
+.infos {
+    margin: var(--margin-one);
+    display: flex;
+    justify-content: flex-end;
+}
+.info {
+    margin-right: 4rem;
+    line-height: 1.3rem;
+}
+.info .name {
+    font-size: var(--v-small);
+    color: var(--darkgray-fnt);
+}
+.info .name2 {
+    font-weight: var(--light);
+    color: var(--light-fnt - 0.5rem);
+    font-size: var(--small);
+}
+.about {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(70px, auto);
+    margin-top: 8rem;
+    padding: 1rem 4rem 1rem 0;
+}
+.about-one {
+    grid-column: 1 / 5;
+    grid-row: 1 / 10;
+    background-image: url('images/sample.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-two {
+    
 }
